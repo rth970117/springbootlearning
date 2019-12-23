@@ -15,10 +15,10 @@ public class HelloController {
     @RequestMapping("/hello")
     public Article hello() {
 
-        Article article = new Article(1L,"Tom");
-        article.setAuthor("tom");
+        /*Article article = new Article(1L,"Tom");
+        article.setAuthor("tom");*/
 
-        Article article1 = Article.builder().id(2L).author("Bob").build();
+        Article article1 = Article.builder().id(3L).author("Bob").build();
 
         log.info("测试一下"+article1);
         return article1;
